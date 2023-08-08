@@ -1,5 +1,6 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <!-- Auto import Main.vue from folder `/components` -->
+    <Main />
   </div>
 </template>
