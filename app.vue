@@ -1,6 +1,12 @@
 <template>
-  <div>
-    <!-- Auto import Main.vue from folder `/components` -->
-    <AppMain />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+}
+</style>
