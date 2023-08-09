@@ -36,6 +36,8 @@ pnpm run dev
 
 # yarn
 yarn dev
+# With different .env file
+yarn dev --dotenv .env.development
 ```
 
 ## Production
