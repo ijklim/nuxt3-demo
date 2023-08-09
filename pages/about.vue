@@ -6,4 +6,6 @@
 
 <template>
   <h1>About Us</h1>
+
+  <img src="~/assets/img/baby-hippo.jpg" alt="Baby Hippo">
 </template>
