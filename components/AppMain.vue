@@ -9,8 +9,11 @@
 </script>
 
 <template>
+  <h1>{{ appConfig.appName }}</h1>
+
   <p><strong>runtimeConfig</strong>:</p>
 
+  <!-- Note: Printing whole object will produce warning `[Vue warn]: Hydration text content mismatch in <pre>:` -->
   <pre>
     {{ runtimeConfig }}
   </pre>
