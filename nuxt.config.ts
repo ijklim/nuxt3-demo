@@ -1,6 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  css: [ "@/assets/css/styles.scss" ],
+  app: {
+    head: {
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Bubblegum Sans&display=swap' },
+      ],
+    },
+  },
+  css: [
+    '@/assets/css/main.scss',
+  ],
   devtools: { enabled: true },
   // https://nuxt.com/docs/getting-started/configuration
   runtimeConfig: {

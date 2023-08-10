@@ -10,5 +10,5 @@
   </NuxtLayout>
 </template>
 
-<style>
+<style scoped>
 </style>
