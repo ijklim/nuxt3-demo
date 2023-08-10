@@ -22,11 +22,13 @@
 </script>
 
 <template>
-  <Head>
-    <Meta name="description" content="About Us description set in the template" />
-  </Head>
+  <span>
+    <Head>
+      <Meta name="description" content="About Us description set in the template" />
+    </Head>
 
-  <h1>About Us</h1>
+    <h1>About Us</h1>
 
-  <img src="~/assets/img/baby-hippo.jpg" alt="Baby Hippo">
+    <img src="~/assets/img/baby-hippo.jpg" alt="Baby Hippo">
+  </span>
 </template>

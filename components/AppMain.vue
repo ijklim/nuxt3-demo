@@ -9,24 +9,26 @@
 </script>
 
 <template>
-  <h1>{{ appConfig.appName }}</h1>
+  <span>
+    <h1>{{ appConfig.appName }}</h1>
 
-  <p><strong>runtimeConfig</strong>:</p>
+    <p><strong>runtimeConfig</strong>:</p>
 
-  <!-- Note: Printing whole object will produce warning `[Vue warn]: Hydration text content mismatch in <pre>:` -->
-  <pre>
-    {{ runtimeConfig }}
-  </pre>
+    <!-- Note: Printing whole object will produce warning `[Vue warn]: Hydration text content mismatch in <pre>:` -->
+    <pre>
+      {{ runtimeConfig.public }}
+    </pre>
 
-  <p><strong>$config</strong>:</p>
+    <p><strong>$config (similar to runtimeConfig)</strong>:</p>
 
-  <pre>
-    {{ $config }}
-  </pre>
+    <pre>
+      {{ $config.app }}
+    </pre>
 
-  <p><strong>appConfig</strong>:</p>
+    <p><strong>appConfig</strong>:</p>
 
-  <pre>
-    {{ appConfig }}
-  </pre>
+    <pre>
+      {{ appConfig }}
+    </pre>
+  </span>
 </template>

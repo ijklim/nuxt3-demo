@@ -7,6 +7,9 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Bubblegum Sans&display=swap' },
       ],
     },
+    // https://nuxt.com/docs/getting-started/transitions
+    // Note: Transition won't work across pages using different layout
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
   css: [
     '@/assets/css/main.scss',

@@ -24,9 +24,10 @@
 </script>
 
 <template>
-  <h1 style="font-family:Borel;">Home Page</h1>
-
   <div>
+    <!-- Note: Need single root element to prevent transition warning -->
+    <h1 style="font-family:Borel;">Home Page</h1>
+
     <!-- Auto import Main.vue from folder `/components` -->
     <AppMain />
   </div>

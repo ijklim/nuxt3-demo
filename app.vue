@@ -27,7 +27,7 @@
 
 <style lang="scss" scoped>
   .content {
-    min-height: 85vh;
+    min-height: 80vh;
     padding: 10px;
   }
 
