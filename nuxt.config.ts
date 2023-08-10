@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Bubblegum Sans&display=swap' },
       ],
     },
