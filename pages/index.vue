@@ -3,22 +3,28 @@
 
   // https://nuxt.com/docs/getting-started/seo-meta#types
   useHead({
-    title: appConfig.appName,
+    bodyAttrs: {
+      class: 'class-test',
+    },
+    link: [
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Borel&display=swap',
+      },
+    ],
     meta: [
       { name: 'Home Page', },
       { description: 'Put more information here...', },
     ],
-    bodyAttrs: {
-      class: 'class-test',
-    },
     script: [
       { innerHTML: 'console.log("Hello About Us!")' },
     ],
+    title: appConfig.appName,
   });
 </script>
 
 <template>
-  <h1>Home Page</h1>
+  <h1 style="font-family:Borel;">Home Page</h1>
 
   <div>
     <!-- Auto import Main.vue from folder `/components` -->
