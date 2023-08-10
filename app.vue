@@ -1,3 +1,14 @@
+<script setup>
+  const appConfig = useAppConfig();
+
+  // https://nuxt.com/docs/getting-started/seo-meta#title-template
+  useHead({
+    titleTemplate: (titleChunk) => {
+      return titleChunk ? `${titleChunk} - ${appConfig.appName}` : appConfig.appName;
+    },
+  });
+</script>
+
 <template>
   <NuxtLayout>
     <div class="content">

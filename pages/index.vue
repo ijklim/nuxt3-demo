@@ -1,4 +1,20 @@
 <script setup>
+  const appConfig = useAppConfig();
+
+  // https://nuxt.com/docs/getting-started/seo-meta#types
+  useHead({
+    title: appConfig.appName,
+    meta: [
+      { name: 'Home Page', },
+      { description: 'Put more information here...', },
+    ],
+    bodyAttrs: {
+      class: 'class-test',
+    },
+    script: [
+      { innerHTML: 'console.log("Hello About Us!")' },
+    ],
+  });
 </script>
 
 <template>
