@@ -17,6 +17,18 @@ code {
   padding: 5px;
 }
 
+pre {
+  background-color: #333;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  padding: 8px;
+  /* white-space setting wraps long sentences */
+  white-space: pre-wrap;
+}
+
 p {
   margin: 15px 0px;
 }
