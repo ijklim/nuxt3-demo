@@ -6,6 +6,19 @@
 body {
   background-color: $backgroundColor;
   font-family: 'Bubblegum Sans';
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
+code {
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 5px;;
+  padding: 5px;
+}
+
+p {
+  margin: 15px 0px;
 }
 
 // === Transition ===

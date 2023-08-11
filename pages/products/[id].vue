@@ -17,7 +17,14 @@
 </script>
 
 <template>
-  <h1>Product Page, id: {{ route.params.id }}</h1>
+  <span>
+    <h1>Product Page, id: {{ route.params.id }}</h1>
+
+    <p>Using custom page transition and middleware (<code>definePageMeta::pageTransition & ::middleware</code>)</p>
+
+    <p>Validating route param (<code>definePageMeta::validate</code>)</p>
+  </span>
+
 </template>
 
 <style scoped>
