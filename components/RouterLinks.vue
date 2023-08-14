@@ -8,7 +8,8 @@
     { url: '/layout', name: 'Layout' },
     { url: '/products/5', name: 'Product: 5' },
     { url: '/products/118', name: 'Product: 118' },
-    { url: '/products/error', name: 'Product: error' },
+    // Note: Need to disable the error page as it will prevent generation of SSR pages
+    // { url: '/products/error', name: 'Product: error' },
     { url: '/useHead', name: 'useHead' },
     { url: '/useSeoMeta', name: 'useSeoMeta' },
     { url: '/useState', name: 'useState' },
