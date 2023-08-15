@@ -14,6 +14,9 @@ export default defineNuxtConfig({
   css: [
     '@/assets/css/main.scss',
   ],
+  devServer: {
+    port: 8880,
+  },
   devtools: { enabled: true },
   // https://nuxt.com/docs/getting-started/configuration
   runtimeConfig: {
