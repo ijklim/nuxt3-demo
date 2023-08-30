@@ -11,7 +11,7 @@
 
   // Note: Only trigger once during page load
   watch(route, (value) => {
-    console.log('[app.vue::watch::route] value.[fullPath, params]:', value.fullPath, value.params);
+    // console.log('[app.vue::watch::route] value.[fullPath, params]:', value.fullPath, value.params);
   }, {
     deep: true,
     immediate: true,
@@ -19,7 +19,7 @@
 
   // Note: Will trigger most consistently when `route.path` is referenced
   watchEffect(() => {
-    console.log('[app.vue::watchEffect] route.[fullPath, path, params]:', route.fullPath, route.path, route.params);
+    // console.log('[app.vue::watchEffect] route.[fullPath, path, params]:', route.fullPath, route.path, route.params);
   });
 </script>
 

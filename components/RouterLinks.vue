@@ -10,6 +10,7 @@
     { url: '/products/118', name: 'Product: 118' },
     // Note: Need to disable the error page as it will prevent generation of SSR pages
     // { url: '/products/error', name: 'Product: error' },
+    { url: '/useAsyncData', name: 'useAsyncData' },
     { url: '/useHead', name: 'useHead' },
     { url: '/useSeoMeta', name: 'useSeoMeta' },
     { url: '/useState', name: 'useState' },
