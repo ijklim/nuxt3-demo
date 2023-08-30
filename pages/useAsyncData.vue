@@ -12,6 +12,8 @@
     'data',
     () => $fetch(url)
   );
+
+  // const { data, pending, error } = useFetch(url);
 </script>
 
 <template>
