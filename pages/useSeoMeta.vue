@@ -19,6 +19,7 @@
 
 <template>
   <span>
+    <!-- https://nuxt.com/docs/getting-started/seo-meta#components -->
     <Head>
       <Meta name="description" content="Description set in the template <Head>" />
     </Head>

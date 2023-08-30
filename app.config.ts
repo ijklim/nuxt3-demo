@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/getting-started/configuration
+import { displayName, version } from '~/package.json';
+
 export default defineAppConfig({
-  appName: 'Nuxt Demo',
-  appVersion: '1.0.13',
+  appName: displayName,
+  appVersion: version,
 });
