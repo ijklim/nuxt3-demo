@@ -4,6 +4,7 @@
     a: 'https://jsonplaceholder.typicode.com/posts/1/comments',
     b: 'https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en',
     c: 'http://api.open-notify.org/astros.json',
+    d: 'https://picsum.photos/v2/list',
   };
 
   const id = ref(1);
@@ -16,7 +17,11 @@
     watch: [id],
   });
 
-  const astros = await $fetch(url.c).catch((error) => error.data);
+
+  let params = new URLSearchParams();
+  params.append('limit', 2);
+  params.append('page', 3);
+  const dollarFetchData = await $fetch(`${url.d}?${params.toString()}`).catch((error) => error.data);
 </script>
 
 <template>
@@ -42,9 +47,9 @@
       <button @click="id++">Id: {{ id }}</button> (fail as well, initial api call passes probably due to server render)
     </div>
 
-    <strong>Fetching data using `$fetch({{ url.c }})`:</strong>
+    <strong>Fetching data using `$fetch({{ url.d }})`:</strong>
 
-    <pre>{{ astros }}</pre>
+    <pre>{{ dollarFetchData }}</pre>
   </div>
 </template>
 

@@ -15,7 +15,20 @@
       { description: 'Put more information here...', },
     ],
     script: [
-      { innerHTML: 'console.log("Hello useHead!")' },
+      {
+        innerHTML: 'console.log("Hello useHead!")',
+        // valid options are: 'head' | 'bodyClose' | 'bodyOpen'
+        tagPosition: 'bodyOpen',
+      },
+      {
+        async: true,
+        crossorigin: 'anonymous',
+        referrerpolicy: 'origin',
+        // Note: rel would cause problem with ts
+        rel: 'nofollow noopener noreferrer',
+        src: 'https://ads-server.ivan-lim.com/api/ads?pk=7471404401',
+        type: 'text/javascript',
+      },
     ],
     title: 'useHead',
   });
