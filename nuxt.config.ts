@@ -11,13 +11,17 @@ export default defineNuxtConfig({
     // Note: Transition won't work across pages using different layout
     pageTransition: { name: 'page', mode: 'out-in' },
   },
+
   css: [
     '@/assets/css/main.scss',
   ],
+
   devServer: {
     port: 8880,
   },
+
   devtools: { enabled: true },
+
   // https://nuxt.com/docs/getting-started/configuration
   runtimeConfig: {
     // The private keys which are only available server-side
@@ -28,6 +32,7 @@ export default defineNuxtConfig({
       apiSecretPublic: process.env.NUXT_API_SECRET_PUBLIC,
     },
   },
+
   vite: {
     css: {
       preprocessorOptions: {

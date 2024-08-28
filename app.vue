@@ -26,9 +26,9 @@
 <template>
   <NuxtLayout>
     <!-- components/RouterLinks.vue -->
-    <RouterLinks />
+    <!-- <RouterLinks /> -->
 
-    <p style="font-size:0.8rem; padding:5px;">Using <code>useHead::titleTemplate</code> to add suffix to title</p>
+    <div style="font-size:0.8rem; padding:5px;">Using <code>useHead::titleTemplate</code> to add suffix to title</div>
 
     <div class="content">
       <!-- https://nuxt.com/docs/api/components/nuxt-page -->

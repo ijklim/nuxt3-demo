@@ -1,21 +1,21 @@
 <script setup>
-  const routerLinks = [
-    { url: '/', name: 'Home' },
-    { url: '/configs', name: 'Configs' },
-    { url: '/fetch', name: 'Fetch' },
-    { url: '/image', name: 'Image' },
-    { url: '/importMeta', name: 'ImportMeta' },
-    { url: '/layout', name: 'Layout' },
-    { url: '/products/5', name: 'Product: 5' },
-    { url: '/products/118', name: 'Product: 118' },
-    // Note: Need to disable the error page as it will prevent generation of SSR pages
-    // { url: '/products/error', name: 'Product: error' },
-    { url: '/useAsyncData', name: 'useAsyncData' },
-    { url: '/useHead', name: 'useHead' },
-    { url: '/useSeoMeta', name: 'useSeoMeta' },
-    { url: '/useState', name: 'useState' },
-    { url: '/useState2', name: 'useState2' },
-  ];
+const routerLinks = [
+  { url: '/', name: 'Home' },
+  { url: '/configs', name: 'Configs' },
+  { url: '/fetch', name: 'Fetch' },
+  { url: '/image', name: 'Image' },
+  { url: '/importMeta', name: 'ImportMeta' },
+  { url: '/layout', name: 'Layout' },
+  { url: '/products/5', name: 'Product: 5' },
+  { url: '/products/118', name: 'Product: 118' },
+  // Note: Need to disable the error page as it will prevent generation of SSR pages
+  // { url: '/products/error', name: 'Product: error' },
+  { url: '/useAsyncData', name: 'useAsyncData' },
+  { url: '/useHead', name: 'useHead' },
+  { url: '/useSeoMeta', name: 'useSeoMeta' },
+  { url: '/useState', name: 'useState' },
+  { url: '/useState2', name: 'useState2' },
+];
 </script>
 
 <template>
